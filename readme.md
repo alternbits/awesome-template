@@ -17,6 +17,10 @@ A curated list of awesome AI tools, frameworks, and resources.
 - [Hi](https://hi.ai) *[review](https://altern.ai/tools/hi)* - AI-powered development assistant.
 - [aa](https://altern.ai) - AI-powered development assistant.
 
+## Frameworks
+
+- [b2](https://b2.ai) - AI-powered development assistant.
+
 ---
 
 **License**: CC0
