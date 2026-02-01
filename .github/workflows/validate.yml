@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: alternbits/opendata@0.1.2
+      - uses: alternbits/opendata@0.1.3
         id: opendata
         with:
           fail-if-outdated: 'false'  # allow job to continue so we can commit
