@@ -9,6 +9,23 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to push committed readme
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: alternbits/opendata@0.1.2
+        id: opendata
+        with:
+          fail-if-outdated: 'false'  # allow job to continue so we can commit
+
+      - name: Commit generated readme if changed
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          OUTPUT="${{ steps.opendata.outputs.output-path }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$OUTPUT"
+          git diff --staged --quiet || (git commit -m "chore: update generated readme" && git push)
