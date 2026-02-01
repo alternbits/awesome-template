@@ -1,0 +1,2 @@
+# Compiler config (optional). Leave output empty to use default readme.md.
+output: readme-sample.md
