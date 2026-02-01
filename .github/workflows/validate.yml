@@ -25,6 +25,9 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: |
           OUTPUT="${{ steps.opendata.outputs.output-path }}"
+          if [ -z "$OUTPUT" ]; then
+            OUTPUT="readme-sample.md"
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$OUTPUT"
