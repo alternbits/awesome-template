@@ -1,32 +1,30 @@
-# Altern Open Data – Test Template
+# Awesome AI
 
-Standalone test template for [Altern Open Data](https://github.com/alternbits/opendata). Use this as a starter for a new awesome list or to try the compiler.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## What this is
+A curated list of awesome AI tools, frameworks, and resources.
 
-- **data/** — One YAML file per list item (slug = filename).
-- **meta/** — `info.yml` (title, badges, footer) and `categories.yml`.
-- **config.yml** — Sets output file (e.g. `readme-sample.md`).
-- **.github/workflows/validate.yml** — Runs [alternbits/opendata@v1](https://github.com/alternbits/opendata) on push/PR. No compiler in this repo.
+## Contents
 
-## Use as a new project
+- [Tools](#tools)
+- [Frameworks](#frameworks)
+- [Resources](#resources)
 
-1. Copy this folder into a new repo (or use as a template repo).
-2. Edit **data/** and **meta/** for your list.
-3. Push; CI validates and compiles. Commit the generated file (e.g. `readme-sample.md`) when it changes.
+## Tools
 
-## Local testing
+- [Altern](https://altern.ai) *[review](https://altern.ai/tools/altern)* - AI-powered development assistant.
+- [Feat](https://altern.ai) - AI-powered development assistant.
+- [Hi](https://hi.ai) *[review](https://altern.ai/tools/hi)* - AI-powered development assistant.
+- [aa](https://altern.ai) - AI-powered development assistant.
 
-You need the compiler from the main repo. From the **opendata** repo root:
+## Frameworks
 
-```bash
-make build
-cd template && ../compiler/bin/compile
-```
+- [b2](https://b2.ai) - AI-powered development assistant.
 
-Or use the action: push to a branch and open a PR; the workflow runs the compiler.
+---
 
-## Docs
+**License**: CC0
 
-- **CONTRIBUTING.md** — How to add entries and data format (summary).
-- Full format and meta options: [alternbits/opendata CONTRIBUTING](https://github.com/alternbits/opendata/blob/main/CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
+Maintained by the community. Found something awesome? [Add it](CONTRIBUTING.md).
