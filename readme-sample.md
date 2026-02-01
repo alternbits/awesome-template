@@ -12,7 +12,7 @@ A curated list of awesome AI tools, frameworks, and resources.
 
 ## Tools
 
-- [Altern](https://altern.ai) - AI-powered development assistant.
+- [Altern](https://altern.ai) *[review](https://altern.ai/tools/altern)* - AI-powered development assistant.
 - [Feat](https://altern.ai) - AI-powered development assistant.
 - [aa](https://altern.ai) - AI-powered development assistant.
 
