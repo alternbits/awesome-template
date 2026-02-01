@@ -1,3 +1,3 @@
 # Compiler config (optional). Leave output empty to use default readme.md.
-output: readme-sample.md
+output: readme.md
 review_links_enabled: true
