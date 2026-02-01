@@ -26,7 +26,7 @@ jobs:
         run: |
           OUTPUT="${{ steps.opendata.outputs.output-path }}"
           if [ -z "$OUTPUT" ]; then
-            OUTPUT="readme-sample.md"
+            OUTPUT="readme.md"
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
